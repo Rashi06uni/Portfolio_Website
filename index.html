@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio – Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-inner">
+
+      <!-- Left: Profile Image -->
+      <div class="profile-wrap">
+        <div class="profile-ring">
+          <img
+            src="profile.jpeg"
+            alt="Profile photo"
+            class="profile-img"
+          />
+        </div>
+        <div class="profile-badge">👋 Available for work</div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="hero-content">
+        <!-- <p class="hero-eyebrow">Hello 😊👋</p> -->
+        <p class="hero-name">Rashi Yadav</p>
+        <h1 class="hero-title">Full Stack<br/><span>Developer</span></h1>
+        <p class="hero-intro">
+        I am a BTech CSE student and an aspiring full stack developer. I enjoy turning ideas into interactive, user-friendly products. When I’m not coding, you’ll find me on the wrestling mat pushing my limits.
+        </p>
+
+        <div class="hero-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          
+        </div>
+
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View Work</a>
+          <a href="Rashi_Yadav_Resume.pdf" download class="btn btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download RESUME
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Decorative blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </section>
+
+  <!-- Identity Cards -->
+  <section class="cards-section">
+    <div class="cards-grid">
+
+      <div class="id-card" data-index="0">
+        <div class="id-card-icon">💻</div>
+        <h2 class="id-card-title">Full Stack Developer</h2>
+        <p class="id-card-desc">
+         I build responsive and user-friendly web applications from front-end design to back-end logic. I focus on writing clean code and creating smooth user experiences.
+        </p>
+        <div class="id-card-line"></div>
+      </div>
+
+      <div class="id-card id-card--featured" data-index="1">
+        <div class="id-card-icon">🎨</div>
+        <h2 class="id-card-title">Creative Mind</h2>
+        <p class="id-card-desc">
+          I enjoy blending creativity with logic to design experiences that are not just functional but also visually engaging and intuitive for users.
+        </p>
+        <div class="id-card-line"></div>
+      </div>
+
+      <div class="id-card" data-index="2">
+        <div class="id-card-icon">🤼</div>
+        <h2 class="id-card-title">Wrestler</h2>
+        <p class="id-card-desc">
+         Wrestling has taught me discipline, resilience, and consistency — the same mindset I bring to learning, coding, and overcoming challenges.
+        </p>
+        <div class="id-card-line"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills: What's in my bag -->
+  <section class="skills-section" id="skills">
+    <div class="skills-wrapper">
+
+      <!-- Center -->
+      <div class="skills-center">
+        <div class="skills-bag">🎒</div>
+        <h2 class="skills-title">What's in<br/><span>my bag</span></h2>
+        <p class="skills-sub">Tools &amp; traits I carry everywhere</p>
+      </div>
+
+      <!-- Skill chips — JS will position these -->
+      <div class="skill-chip" data-tooltip="The backbone of every webpage I build.">
+        <span class="skill-icon">🌐</span> HTML
+      </div>
+      <div class="skill-chip" data-tooltip="Styling with precision and creativity.">
+        <span class="skill-icon">🎨</span> CSS
+      </div>
+      <div class="skill-chip" data-tooltip="Making things move and think.">
+        <span class="skill-icon">⚡</span> JavaScript
+      </div>
+      <!-- <div class="skill-chip" data-tooltip="Component-driven UIs at scale.">
+        <span class="skill-icon">⚛️</span> React
+      </div> -->
+      <div class="skill-chip" data-tooltip="Flexible, document-based data storage.">
+        <span class="skill-icon">🍃</span> MongoDB
+      </div>
+      <div class="skill-chip" data-tooltip="Breaking down hard problems, step by step.">
+        <span class="skill-icon">🧩</span> Problem Solving
+      </div>
+      <div class="skill-chip" data-tooltip="Showing up every day, no matter what.">
+        <span class="skill-icon">🏋️</span> Discipline
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="work">
+    <div class="projects-inner">
+
+      <div class="section-header">
+        <p class="section-eyebrow">Selected Work</p>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">A few things I've built recently.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Card 1
+        <article class="proj-card" data-index="0">
+          <div class="proj-thumb proj-thumb--1">
+            <span class="proj-thumb-icon">🛒</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">ShopSphere</h3>
+            <p class="proj-desc">A full-featured e-commerce platform with cart management, user auth, and real-time inventory updates.</p>
+            <div class="proj-stack">
+              <span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" class="proj-btn proj-btn--primary">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="#" class="proj-btn proj-btn--ghost">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <!-- <article class="proj-card" data-index="1">
+          <div class="proj-thumb proj-thumb--2">
+            <span class="proj-thumb-icon">💬</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">ChatFlow</h3>
+            <p class="proj-desc">Real-time messaging app with rooms, typing indicators, and emoji reactions — built with WebSockets.</p>
+            <div class="proj-stack">
+              <span>React</span><span>Socket.io</span><span>Express</span><span>CSS</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" class="proj-btn proj-btn--primary">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="#" class="proj-btn proj-btn--ghost">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article> -->
+
+        <!-- Card 3 -->
+        <!-- <article class="proj-card" data-index="2">
+          <div class="proj-thumb proj-thumb--3">
+            <span class="proj-thumb-icon">📊</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">DataBoard</h3>
+            <p class="proj-desc">An analytics dashboard that visualises complex datasets with interactive charts and filterable tables.</p>
+            <div class="proj-stack">
+              <span>TypeScript</span><span>React</span><span>Chart.js</span><span>REST API</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" class="proj-btn proj-btn--primary">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="#" class="proj-btn proj-btn--ghost">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article> --> 
+
+        <!-- Card 4 -->
+        <article class="proj-card" data-index="3">
+          <div class="proj-thumb proj-thumb--1">
+            <span class="proj-thumb-icon">🌐</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Personal Portfolio Website</h3>
+            <p class="proj-desc">A responsive portfolio website built using HTML, CSS, and JavaScript to showcase my skills, projects, and journey. Designed with a focus on clean UI and smooth user experience.</p>
+            <div class="proj-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" class="proj-btn proj-btn--primary">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+              <a href="#" class="proj-btn proj-btn--ghost">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="edu-section" id="education">
+    <div class="edu-inner">
+
+      <div class="section-header">
+        <p class="section-eyebrow">My Journey</p>
+        <h2 class="section-title">Built From Here</h2>
+        <p class="section-sub">The foundations that shaped who I am as a developer and a person.</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item" data-index="0">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-card-top">
+              <span class="tl-icon">🎓</span>
+              <span class="tl-year">2024 - 2028</span>
+            </div>
+            <h3 class="tl-title">BTech CSE </h3>
+            <p class="tl-place"> K R Mangalam University </p>
+            <p class="tl-desc"> Currently pursuing my degree in Computer Science with a focus on full stack development. Building a strong foundation in programming, data structures, and developing real-world web projects. </p>
+            <div class="tl-tags">
+              <span>Algorithms</span><span>OOP</span><span>Databases</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-index="1">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-card-top">
+              <span class="tl-icon">📘</span>
+              <span class="tl-year">2023-2024</span>
+            </div>
+            <h3 class="tl-title">12th CBSE</h3>
+            <p class="tl-place">Rao Bharat Singh International School</p>
+            <p class="tl-desc"> Completed my higher secondary education with a focus on analytical thinking and problem-solving, which laid the foundation for my interest in technology and computer science. </p>
+            <div class="tl-tags">
+              <span>Problem Solving</span><span>Logic</span><span>Foundation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-index="2">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-card-top">
+              <span class="tl-icon">📗</span>
+              <span class="tl-year">2021-2022</span>
+            </div>
+            <h3 class="tl-title">10th CBSE</h3>
+            <p class="tl-place">Kendriya Vidhalaya Sanghathan</p>
+            <p class="tl-desc">Built a strong academic base and developed discipline, consistency, and a learning mindset that continues to support my growth today.</p>
+            <div class="tl-tags">
+              <span>Discipline</span><span>Consistency</span><span>Basics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Wrestling Section -->
+  <section class="wrestling-section" id="wrestling">
+    <div class="wrestling-inner">
+
+      <div class="wrestling-image-wrap">
+        <!-- <img
+          src="images/wrestling.jpeg"
+          alt="Wrestler in action"
+          class="wrestling-img"
+          style="width:100%;height:100%;object-fit:cover;border-radius:20px;"
+        /> -->
+
+      <img src="wrestling.jpeg" alt="Wrestler in action"style="width:100%;height:100%;object-fit:cover;border-radius:20px;">
+
+        <div class="wrestling-img-badge">🏆 Haryana State Bronze Medalist</div>
+      </div>
+
+      <div class="wrestling-content">
+        <p class="section-eyebrow">Beyond the Screen</p>
+        <h2 class="wrestling-title">The Mat Made<br/><span>Me Who I Am</span></h2>
+        <p class="wrestling-desc">
+          Before I ever wrote a line of code, I was on the mat. Wrestling
+          taught me something no classroom could — how to stay calm when
+          everything is against you, how to get back up after a loss, and
+          how to push past the point where most people stop.
+        </p>
+        <p class="wrestling-desc">
+          That same grit lives in every project I build. When a bug won't
+          budge or a deadline is closing in, I don't fold. I dig in.
+        </p>
+        <!-- <div class="wrestling-stats">
+          <div class="wstat">
+            <span class="wstat-num">6+</span>
+            <span class="wstat-label">Years competing</span>
+          </div>
+          <div class="wstat">
+            <span class="wstat-num">3×</span>
+            <span class="wstat-label">Regional finalist</span>
+          </div>
+          <div class="wstat">
+            <span class="wstat-num">∞</span>
+            <span class="wstat-label">Lessons learned</span>
+          </div>
+        </div> -->
+      </div>
+
+    </div>
+  </section>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-name">RASHI YADAV</p>
+      <p class="footer-tagline">Building with code, discipline, and creativity.</p>
+
+      <div class="footer-socials">
+        <!-- LinkedIn -->
+        <!-- <a href="https://www.linkedin.com/in/rashi-yadav-1a04b1329/" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+        </a> -->
+        <a href="https://www.linkedin.com/in/rashi-yadav-1a04b1329/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="footer-icon" 
+          aria-label="LinkedIn"
+          title="Visit my LinkedIn profile">
+  
+         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+           <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.22 0z"/>
+         </svg>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/Rashi06uni" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <!-- Email -->
+        <a href="mailto:yadavrashi2006@gmail.com" class="footer-contact-link" aria-label="Email">📧 yadavrashi2006@gmail.com</a>
+        <!-- Phone -->
+        <span class="footer-contact-link">📱 +91 9870596803</span>
+        <!-- Instagram -->
+        <!-- <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-icon" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.403a4.9 4.9 0 0 1 1.772 1.153 4.9 4.9 0 0 1 1.153 1.772c.163.46.35 1.26.403 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.43a4.9 4.9 0 0 1-1.153 1.772 4.9 4.9 0 0 1-1.772 1.153c-.46.163-1.26.35-2.43.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.403a4.9 4.9 0 0 1-1.772-1.153A4.9 4.9 0 0 1 1.795 19.28c-.163-.46-.35-1.26-.403-2.43C1.334 15.584 1.322 15.204 1.322 12s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.43A4.9 4.9 0 0 1 2.948 2.948 4.9 4.9 0 0 1 4.72 1.795c.46-.163 1.26-.35 2.43-.403C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.775.13 4.902.333 4.14.63a7.07 7.07 0 0 0-2.555 1.664A7.07 7.07 0 0 0 .63 4.14C.333 4.902.13 5.775.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.058 1.277.261 2.15.558 2.912a7.07 7.07 0 0 0 1.664 2.555 7.07 7.07 0 0 0 2.555 1.664c.762.297 1.635.5 2.912.558C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.277-.058 2.15-.261 2.912-.558a7.07 7.07 0 0 0 2.555-1.664 7.07 7.07 0 0 0 1.664-2.555c.297-.762.5-1.635.558-2.912C23.986 15.668 24 15.259 24 12s-.014-3.668-.072-4.948c-.058-1.277-.261-2.15-.558-2.912a7.07 7.07 0 0 0-1.664-2.555A7.07 7.07 0 0 0 19.86.63C19.098.333 18.225.13 16.948.072 15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </a> -->
+      </div>
+
+      <p class="footer-copy">© <span id="footer-year"></span>Rashi Yadav Made with ❤️, late-night coding, and a lot of learning.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
